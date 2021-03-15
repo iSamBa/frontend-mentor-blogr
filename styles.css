@@ -138,6 +138,25 @@
     padding: 15px 25px;
     color: var(--very-dark-blue);
   }
+
+  .state-art {
+    width: 100vw;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: linear-gradient(to bottom,  hsl(237, 17%, 21%),hsl(237, 23%, 32%) );
+  }
+  .state-art .background-pattern{
+    position: relative;
+    left: -30%;
+    top: 50%;
+    width: 180%;
+  }
+  .state-art .phones{
+    position: relative;
+    width: 100%;
+    top: -800px;
+    left: -20px;
+  }
   
 }
 @media screen and (max-width: 1440px) {
