@@ -110,6 +110,34 @@
     background: transparent ;
     color: var(--neutral-white);
   }
+
+  .content {
+    padding: 30% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--very-dark-blue);
+    padding: 15px 20px;
+  }
+  .content img {
+    width: 120%;
+    margin: 15px 0;
+  }
+
+  .content p {
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 15px 25px;
+    color: var(--very-dark-blue);
+  }
   
 }
 @media screen and (max-width: 1440px) {
