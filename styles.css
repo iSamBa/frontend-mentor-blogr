@@ -21,31 +21,96 @@
 }
 
 @media screen and (max-width: 375px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: var(--neutral-white);
+    background: linear-gradient(to bottom,hsl(13, 100%, 72%) , var(--light-red));
+    border-bottom-left-radius: 100px;
+    position : relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  header .background-pattern {
+    position : absolute;
+    top: -200px;
+    left: -400px;
+    width: 400%;
+    z-index: 1;
+  }
+  nav {
+    z-index: 2;
+  }
+
+  nav .container {
+    display: flex;
+    padding : 15% 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+  }
+
+  nav .burger-menu {
+    width : 40px;
+    height: 25px;
+  }
+
   .introduction {
+    padding-top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
-    color: var(--neutral-white);
-    background: linear-gradient(var(--very-light-red), var(--light-red));
+    z-index: 2
   }
-  .introduction div {
+  .introduction div:nth-child(1){
+    padding: 0% 10%;
+  }
+  .introduction div:nth-child(2) {
     display: flex;
+    margin-top: 50px;
   }
-  button {
+  header button {
+   font-family: "Ubuntu", sans-serif; 
+   font-weight: 600;
+   height: 50px;
+   width: 150px;
+   padding:10px 10px;
+   margin:20px 10px;
+   border: 1px solid var(--neutral-white);
+   border-radius: 25px;
   }
-  h1 {
+  header h1 {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 2.1rem;
+    line-height: 3rem;
+    font-weight: 600;
     font-family: "Overpass", sans-serif;
   }
-  p {
+  header p {
     text-align: center;
+    font-size: 1.2rem;
     font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
   }
+
+  header .start-btn{
+    background-color: var(--neutral-white);
+    color: var(--light-red);
+  }
+  header .more-btn{
+    background: transparent ;
+    color: var(--neutral-white);
+  }
+  
 }
 @media screen and (max-width: 1440px) {
 }
