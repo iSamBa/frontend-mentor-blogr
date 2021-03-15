@@ -28,7 +28,7 @@
     height: 100vh;
     width: 100%;
     color: var(--neutral-white);
-    background: linear-gradient(to bottom,hsl(13, 100%, 72%) , var(--light-red));
+    background: linear-gradient(to bottom,hsl(13, 100%, 72%) ,  hsl(353, 100%, 62%));
     border-bottom-left-radius: 100px;
     position : relative;
     overflow: hidden;
