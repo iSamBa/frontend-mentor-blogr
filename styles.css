@@ -21,36 +21,40 @@
 }
 
 @media screen and (max-width: 375px) {
-
   header {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    color: var(--neutral-white);
-    background: linear-gradient(to bottom,hsl(13, 100%, 72%) ,  hsl(353, 100%, 62%));
+    background: linear-gradient(
+      to bottom,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
     border-bottom-left-radius: 100px;
-    position : relative;
     overflow: hidden;
-    z-index: 0;
   }
 
-  header .background-pattern {
-    position : absolute;
-    top: -200px;
-    left: -400px;
-    width: 400%;
-    z-index: 1;
+  .header-container {
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: var(--neutral-white);
+    height: 100vh;
+    background-image: url("./images/bg-pattern-intro.svg");
+    background-size: 350%;
+    background-position-x: -400px;
+    background-position-y: -150px;
+  }
+
+  .nav-container {
+    display: flex;
+    padding: 15% 5%;
+    justify-content: space-between;
+    align-items: center;
   }
   nav {
     z-index: 2;
-  }
-
-  nav .container {
-    display: flex;
-    padding : 15% 5%;
-    justify-content: space-between;
-    align-items: center;
   }
 
   nav .brand {
@@ -59,7 +63,7 @@
   }
 
   nav .burger-menu {
-    width : 40px;
+    width: 40px;
     height: 25px;
   }
 
@@ -69,9 +73,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 2
+    z-index: 2;
   }
-  .introduction div:nth-child(1){
+  .introduction div:nth-child(1) {
     padding: 0% 10%;
   }
   .introduction div:nth-child(2) {
@@ -79,14 +83,14 @@
     margin-top: 50px;
   }
   header button {
-   font-family: "Ubuntu", sans-serif; 
-   font-weight: 600;
-   height: 50px;
-   width: 150px;
-   padding:10px 10px;
-   margin:20px 10px;
-   border: 1px solid var(--neutral-white);
-   border-radius: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+    border: 1px solid var(--neutral-white);
+    border-radius: 25px;
   }
   header h1 {
     text-align: center;
@@ -102,12 +106,12 @@
     margin-top: 20px;
   }
 
-  header .start-btn{
+  header .start-btn {
     background-color: var(--neutral-white);
     color: var(--light-red);
   }
-  header .more-btn{
-    background: transparent ;
+  header .more-btn {
+    background: transparent;
     color: var(--neutral-white);
   }
 
@@ -120,13 +124,17 @@
   }
 
   .content h2 {
-    font-family: 'Overpass', sans-serif;
+    font-family: "Overpass", sans-serif;
     font-size: 1.7rem;
     text-align: center;
     color: var(--very-dark-blue);
     padding: 15px 20px;
   }
-  .editor-mobile{
+
+  .content img {
+    width: 100%;
+  }
+  .editor-mobile {
     width: 120%;
     margin: 15px 0;
   }
@@ -136,53 +144,52 @@
     font-family: "Overpass", sans-serif;
     font-size: 1rem;
     line-height: 25px;
-    padding: 25px 15px 0px 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: var(--very-dark-blue);
   }
 
   .state-art {
-    width: 100vw;
-    height: 650px;
-    position: relative;
-    top: -125px;
-    left: 15px;
     overflow: hidden;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    background: linear-gradient(to bottom,  hsl(237, 17%, 21%),hsl(237, 23%, 32%) );
+    background: linear-gradient(
+      to bottom,
+      hsl(237, 17%, 21%),
+      hsl(237, 23%, 32%)
+    );
   }
-  .state-art .background-pattern{
-    position: relative;
-    left: -100px;
-    top: -220px;
-    width: 160%;
+  .state-art-container {
+    width: 100vw;
+    height: 100%;
+    background-image: url("./images/bg-pattern-circles.svg");
+    background-size: 160%;
+    background-position-y: -250px;
+    background-position-x: -100px;
+    background-repeat: no-repeat;
   }
-  
-  .state-art .description{
-    position: relative;
-    top: -400px;
-  }
-  .state-art h2 {
+  .state-art-container h2 {
     color: var(--neutral-white);
     font-size: 2.5rem;
     text-align: center;
+    padding-top: 150px;
   }
-  .state-art p {
+  .state-art-container p {
     color: hsl(0, 0%, 100%);
     font-size: 1rem;
     font-weight: 100;
-    font-family: "Overpass", sans-serif ;
+    font-family: "Overpass", sans-serif;
     line-height: 30px;
     text-align: center;
+    padding-bottom: 100px;
   }
-  .phones{
+  .phones {
     position: relative;
-    width: 120%;
-    left: 15px;
-    bottom: -100px;
+    width: 100%;
+    left: 0px;
+    bottom: -190px;
     z-index: 2;
   }
-  
 }
 @media screen and (max-width: 1440px) {
 }
