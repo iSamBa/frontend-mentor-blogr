@@ -150,6 +150,8 @@
   }
 
   .state-art {
+    position: relative;
+    top : -150px;
     overflow: hidden;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -162,6 +164,8 @@
   .state-art-container {
     width: 100vw;
     height: 100%;
+    padding: 0 25px 0 25px;
+    text-align: center;
     background-image: url("./images/bg-pattern-circles.svg");
     background-size: 160%;
     background-position-y: -250px;
@@ -172,7 +176,7 @@
     color: var(--neutral-white);
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 200px;
   }
   .state-art-container p {
     color: hsl(0, 0%, 100%);
@@ -187,7 +191,7 @@
     position: relative;
     width: 100%;
     left: 0px;
-    bottom: -190px;
+    top:50px;
     z-index: 2;
   }
 }
