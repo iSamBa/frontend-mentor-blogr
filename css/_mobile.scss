@@ -1,0 +1,23 @@
+@import "variables/screens";
+@import "variables/gradients";
+@import "variables/colors";
+
+@media screen and (max-width : $mobile-screen){
+  header {
+    background: $header-gradient;
+    border-bottom-left-radius: 100px;
+    overflow: hidden;
+  }
+  .header-container {
+    background-image: url("../images/bg-pattern-intro.svg");
+    background-size: 350%;
+    background-position-x: -400px;
+    background-position-y: -150px;
+    color: $neutral-white;
+    display: flex;
+    flex-direction: column;
+    position : relative;
+    height: 100vh;
+    width: 100%;
+ }
+}

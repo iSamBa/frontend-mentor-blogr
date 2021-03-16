@@ -37,7 +37,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     color: var(--neutral-white);
     height: 100vh;
