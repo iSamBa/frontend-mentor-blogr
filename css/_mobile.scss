@@ -166,4 +166,35 @@
       width: 130%;
     }
   }
+
+  footer {
+    background-color: $very-dark-black-blue;
+    color: $neutral-white;
+    font-family:$ubuntu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    border-top-right-radius: 100px;
+    img {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      padding: 25px 0;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+    li {
+     margin-bottom: 15px; 
+     font-size: 1.1rem;
+    }
+  }
 }
