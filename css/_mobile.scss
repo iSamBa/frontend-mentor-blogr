@@ -1,6 +1,7 @@
 @import "variables/screens";
 @import "variables/gradients";
 @import "variables/colors";
+@import "variables/fonts";
 
 @media screen and (max-width : $mobile-screen){
   header {
@@ -20,4 +21,67 @@
     height: 100vh;
     width: 100%;
  }
+ nav {
+   z-index : 2;
+   .nav-container {
+      display: flex;
+      padding : 15% 5%;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .burger-menu {
+      width: 40px;
+      height: 25px;
+   }
+ }
+
+ .introduction {
+   padding-top: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   z-index: 2;
+  }
+ .description{
+    padding : 0% 10%;
+  }
+  .buttons{
+    display: flex;
+    margin-top: 50px;
+   }
+   header {
+   button{
+    font-family:$ubuntu;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    margin : 20px 10px;
+    border : 1px solid $neutral-white;
+    border-radius: 25px;
+  }
+   h1 {
+     text-align: center;
+     font-size : 2.1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    font-family: $overpass;
+   }
+   p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: $ubuntu;
+    margin-top: 20px;
+   }
+   .start-btn {
+    background-color: $neutral-white;
+    color: $light-red;
+  }
+  .more-btn {
+    background: transparent;
+    color: $neutral-white;
+  }
+ }
+
 }
