@@ -3,7 +3,7 @@
 @import "variables/colors";
 @import "variables/fonts";
 
-@media screen and (max-width : $mobile-screen){
+@media screen and (max-width: $mobile-screen) {
   header {
     background: $header-gradient;
     border-bottom-left-radius: 100px;
@@ -17,146 +17,153 @@
     color: $neutral-white;
     display: flex;
     flex-direction: column;
-    position : relative;
+    position: relative;
     height: 100vh;
     width: 100%;
- }
- nav {
-   z-index : 2;
-   .nav-container {
+  }
+  nav {
+    z-index: 2;
+    .nav-container {
       display: flex;
-      padding : 15% 5%;
+      padding: 15% 5%;
       justify-content: space-between;
       align-items: center;
-   }
-   .burger-menu {
+    }
+    .burger-menu {
       width: 40px;
       height: 25px;
-   }
- }
+    }
+  }
 
- .introduction {
-   padding-top: 40%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   z-index: 2;
-  }
- .description{
-    padding : 0% 10%;
-  }
-  .buttons{
+  .introduction {
+    padding-top: 40%;
     display: flex;
-    margin-top: 50px;
-   }
-   header {
-   button{
-    font-family:$ubuntu;
-    font-weight: 600;
-    height: 50px;
-    width: 150px;
-    padding: 10px;
-    margin : 20px 10px;
-    border : 1px solid $neutral-white;
-    border-radius: 25px;
-  }
-   h1 {
-     text-align: center;
-     font-size : 2.1rem;
-    line-height: 3rem;
-    font-weight: 600;
-    font-family: $overpass;
-   }
-   p{
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: $ubuntu;
-    margin-top: 20px;
-   }
-   .start-btn {
-    background-color: $neutral-white;
-    color: $light-red;
-  }
-  .more-btn {
-    background: transparent;
-    color: $neutral-white;
-  }
- }
-
- .content {
-  padding: 30% 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h2 {
-    font-family: $overpass;
-    font-size: 1.7rem;
-    text-align: center;
-    color: $very-dark-blue;
-    padding: 15px 20px;
-  }
-  p {
-    text-align: center;
-    font-family: $overpass;
-    font-size: 1rem;
-    line-height: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: $very-dark-blue;
-  }
-  .editor-mobile {
-    width: 100%;
-    margin: 15px 0 ;
-  }
-
-  .state-art {
-    position: relative;
-    top : -150px;
-    overflow: hidden;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    background: $body-gradient
-  }
-  .phones {
-    position: relative;
-    width: 100%;
-    left: 0px;
-    top:50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
   }
-  .state-art-container {
-    width: 100vw;
-    height: 100%;
-    padding: 0 25px 0 25px;
-    text-align: center;
-    background-image: url("../images/bg-pattern-circles.svg");
-    background-size: 160%;
-    background-position-y: -250px;
-    background-position-x: -100px;
-    background-repeat: no-repeat;
-    h2 {
-      color: $neutral-white;
-      font-size: 2.5rem;
-      text-align: center;
-      padding-top: 200px;
+  .description {
+    padding: 0% 10%;
+  }
+  .buttons {
+    display: flex;
+    margin-top: 50px;
+  }
+  header {
+    button {
+      font-family: $ubuntu;
+      font-weight: 600;
+      height: 50px;
+      width: 150px;
+      padding: 10px;
+      margin: 20px 10px;
+      border: 1px solid $neutral-white;
+      border-radius: 25px;
     }
-   p {
-    color: hsl(0, 0%, 100%);
-    font-size: 1rem;
-    font-weight: 100;
-    font-family: $overpass;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 100px;
+    h1 {
+      text-align: center;
+      font-size: 2.1rem;
+      line-height: 3rem;
+      font-weight: 600;
+      font-family: $overpass;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: $ubuntu;
+      margin-top: 20px;
+    }
+    .start-btn {
+      background-color: $neutral-white;
+      color: $light-red;
+    }
+    .more-btn {
+      background: transparent;
+      color: $neutral-white;
+    }
   }
 
+  .content {
+    padding: 30% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-family: $overpass;
+      font-size: 1.7rem;
+      text-align: center;
+      color: $very-dark-blue;
+      padding: 15px 20px;
+    }
+    p {
+      text-align: center;
+      font-family: $overpass;
+      font-size: 1rem;
+      line-height: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: $very-dark-blue;
+    }
+    .editor-mobile {
+      width: 100%;
+      margin: 15px 0;
+    }
 
+    .state-art {
+      position: relative;
+      top: -150px;
+      overflow: hidden;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      background: $body-gradient;
+    }
+    .phones {
+      position: relative;
+      width: 100%;
+      left: 0px;
+      top: 50px;
+      z-index: 2;
+    }
+    .state-art-container {
+      width: 100vw;
+      height: 100%;
+      padding: 0 25px 0 25px;
+      text-align: center;
+      background-image: url("../images/bg-pattern-circles.svg");
+      background-size: 160%;
+      background-position-y: -250px;
+      background-position-x: -100px;
+      background-repeat: no-repeat;
+      h2 {
+        color: $neutral-white;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 200px;
+      }
+      p {
+        color: hsl(0, 0%, 100%);
+        font-size: 1rem;
+        font-weight: 100;
+        font-family: $overpass;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 100px;
+      }
+    }
   }
-
-
- }
-
-
+  #application {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 375px;
+    overflow: hidden;
+    img {
+      width: 130%;
+    }
+  }
 }
