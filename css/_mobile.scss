@@ -84,4 +84,79 @@
   }
  }
 
+ .content {
+  padding: 30% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-family: $overpass;
+    font-size: 1.7rem;
+    text-align: center;
+    color: $very-dark-blue;
+    padding: 15px 20px;
+  }
+  p {
+    text-align: center;
+    font-family: $overpass;
+    font-size: 1rem;
+    line-height: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: $very-dark-blue;
+  }
+  .editor-mobile {
+    width: 100%;
+    margin: 15px 0 ;
+  }
+
+  .state-art {
+    position: relative;
+    top : -150px;
+    overflow: hidden;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: $body-gradient
+  }
+  .phones {
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top:50px;
+    z-index: 2;
+  }
+  .state-art-container {
+    width: 100vw;
+    height: 100%;
+    padding: 0 25px 0 25px;
+    text-align: center;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-size: 160%;
+    background-position-y: -250px;
+    background-position-x: -100px;
+    background-repeat: no-repeat;
+    h2 {
+      color: $neutral-white;
+      font-size: 2.5rem;
+      text-align: center;
+      padding-top: 200px;
+    }
+   p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: $overpass;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+
+  }
+
+
+ }
+
+
 }

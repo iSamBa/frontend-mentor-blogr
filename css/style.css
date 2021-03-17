@@ -99,6 +99,84 @@
     background: transparent;
     color: white;
   }
+  .content {
+    padding: 30% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content h2 {
+    font-family: "Overpass", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #1f3f5b;
+    padding: 15px 20px;
+  }
+  .content p {
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #1f3f5b;
+  }
+  .content .editor-mobile {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .content .state-art {
+    position: relative;
+    top: -150px;
+    overflow: hidden;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+    background: linear-gradient(to bottom, #2c2d3f, #3f4164);
+  }
+  .content .phones {
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    z-index: 2;
+  }
+  .content .state-art-container {
+    width: 100vw;
+    height: 100%;
+    padding: 0 25px 0 25px;
+    text-align: center;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-size: 160%;
+    background-position-y: -250px;
+    background-position-x: -100px;
+    background-repeat: no-repeat;
+  }
+  .content .state-art-container h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 200px;
+  }
+  .content .state-art-container p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: "Overpass", sans-serif;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 100px;
+  }
 }
 
 * {
