@@ -57,9 +57,15 @@
     color: $very-dark-blue;
     font-family: $ubuntu;
     .items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
       .title {
         display: flex;
         align-items: center;
+        padding-bottom: 4%;
         h3 {
           font-size: 1.1rem;
           font-weight: 500;
@@ -69,6 +75,18 @@
           height: 8px;
           margin-left: 10px;
         }
+      }
+      .content {
+        background-color: #ebebeb;
+        width: 90%;
+        border-radius: 5px;
+        padding: 3%;
+        color: $very-dark-blue;
+        font-weight: 500;
+      }
+      li {
+        list-style: none;
+        margin: 5px 0;
       }
     }
   }

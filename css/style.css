@@ -73,6 +73,22 @@
     color: #1f3f5b;
     font-family: "Ubuntu", sans-serif;
   }
+  .menu .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
   .menu .items .title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -80,6 +96,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 4%;
   }
   .menu .items .title h3 {
     font-size: 1.1rem;
@@ -89,6 +106,18 @@
     width: 12px;
     height: 8px;
     margin-left: 10px;
+  }
+  .menu .items .content {
+    background-color: #ebebeb;
+    width: 90%;
+    border-radius: 5px;
+    padding: 3%;
+    color: #1f3f5b;
+    font-weight: 500;
+  }
+  .menu .items li {
+    list-style: none;
+    margin: 5px 0;
   }
   .introduction {
     padding-top: 40%;
