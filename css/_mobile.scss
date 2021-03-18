@@ -43,6 +43,7 @@
   .menu {
     background-color: $neutral-white;
     padding-top: 7%;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -50,12 +51,34 @@
     position: absolute;
     top: 100px;
     right: 5%;
-    height: 100%;
     width: 90%;
     z-index: 4;
     border-radius: 5px;
+    padding-bottom: 10%;
     color: $very-dark-blue;
     font-family: $ubuntu;
+    box-shadow: 2px 5px 5px #bebebe;
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 90%;
+      height: 1px;
+      color: #f0efef;
+      border-bottom: 0px;
+    }
+    button {
+      margin-bottom: 20px;
+    }
+    .signup-btn {
+      background: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+      );
+      color: $neutral-white;
+    }
+    .login-btn {
+    }
     .items {
       display: flex;
       flex-direction: column;
@@ -105,16 +128,18 @@
     display: flex;
     margin-top: 50px;
   }
+  button {
+    font-family: $ubuntu;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    border: 1px solid $neutral-white;
+    border-radius: 25px;
+  }
   header {
     button {
-      font-family: $ubuntu;
-      font-weight: 600;
-      height: 50px;
-      width: 150px;
       padding: 10px;
       margin: 20px 10px;
-      border: 1px solid $neutral-white;
-      border-radius: 25px;
     }
     h1 {
       text-align: center;
