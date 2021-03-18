@@ -2,10 +2,23 @@
 @import "variables/gradients";
 @import "variables/colors";
 @import "variables/fonts";
-
+@keyframes rotation {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @media screen and (max-width: $mobile-screen) {
   .hidden {
     display: none;
+  }
+
+  .animate-arrow {
+    /*transition: 1s ease-in-out;
+    transform: rotate(-90deg);*/
+    animation: rotation 0.5s ease-in-out;
   }
 
   header {
@@ -88,6 +101,7 @@
       .title {
         display: flex;
         align-items: center;
+        padding-top: 4%;
         padding-bottom: 4%;
         h3 {
           font-size: 1.1rem;
