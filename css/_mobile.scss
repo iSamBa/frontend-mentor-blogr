@@ -4,6 +4,10 @@
 @import "variables/fonts";
 
 @media screen and (max-width: $mobile-screen) {
+  .hidden {
+    display: none;
+  }
+
   header {
     background: $header-gradient;
     border-bottom-left-radius: 100px;
@@ -18,23 +22,56 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding-bottom: 20%;
   }
   nav {
     z-index: 2;
-    .nav-container {
-      display: flex;
-      padding: 15% 5%;
-      justify-content: space-between;
-      align-items: center;
-    }
+    display: flex;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+
     .burger-menu {
       width: 40px;
       height: 25px;
     }
   }
-
+  .menu {
+    background-color: $neutral-white;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    height: 100%;
+    width: 90%;
+    z-index: 4;
+    border-radius: 5px;
+    color: $very-dark-blue;
+    font-family: $ubuntu;
+    .items {
+      .title {
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+        img {
+          width: 12px;
+          height: 8px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
   .introduction {
     padding-top: 40%;
     display: flex;
@@ -170,7 +207,7 @@
   footer {
     background-color: $very-dark-black-blue;
     color: $neutral-white;
-    font-family:$ubuntu;
+    font-family: $ubuntu;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,8 +230,8 @@
       margin-bottom: 25px;
     }
     li {
-     margin-bottom: 15px; 
-     font-size: 1.1rem;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
     }
   }
 }
