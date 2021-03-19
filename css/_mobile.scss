@@ -2,21 +2,14 @@
 @import "variables/gradients";
 @import "variables/colors";
 @import "variables/fonts";
-@keyframes rotation {
-  from {
-    transform: rotate(-90deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
+
 @media screen and (max-width: $mobile-screen) {
   .hidden {
     display: none;
   }
 
-  .animate-arrow {
-    animation: rotation 0.3s ease-in-out;
+  .arrow-open {
+    transform: rotate(-180deg);
   }
 
   header {
@@ -108,7 +101,7 @@
           margin-left: 10px;
         }
       }
-      .content {
+      ul {
         background-color: #ebebeb;
         width: 90%;
         border-radius: 5px;
