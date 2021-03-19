@@ -5,11 +5,19 @@ const menuItems = menu.getElementsByClassName("items")[0].getElementsByClassName
 
 Array.from(menuItems).forEach(item => {
   item.addEventListener("click", (e) => {
-    if (e.target.classList.contains("arrow-open")) {
-      e.target.classList.remove("arrow-open");
+
+    const arrowImg = e.target.getElementsByTagName("img")[0];
+    const itemContent = e.target.getElementsByTagName("ul")[0];
+    
+    console.log(arrowImg);
+    console.log(itemContent);
+    if (arrowImg.classList.contains("arrow-open")) {
+      arrowImg.classList.remove("arrow-open");
+      itemContent.classList.add("hidden");
     }
     else {
-      e.target.classList.add("arrow-open");
+      arrowImg.classList.add("arrow-open");
+      itemContent.classList.remove("hidden");
     }
   })
 });
