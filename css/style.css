@@ -26,10 +26,8 @@
     display: none;
   }
   .animate-arrow {
-    /*transition: 1s ease-in-out;
-    transform: rotate(-90deg);*/
-    -webkit-animation: rotation 0.5s ease-in-out;
-            animation: rotation 0.5s ease-in-out;
+    -webkit-animation: rotation 0.3s ease-in-out;
+            animation: rotation 0.3s ease-in-out;
   }
   header {
     background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
@@ -78,19 +76,6 @@
     background-color: white;
     padding-top: 7%;
     padding-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: absolute;
     top: 100px;
     right: 5%;

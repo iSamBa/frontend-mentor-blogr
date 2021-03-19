@@ -16,9 +16,7 @@
   }
 
   .animate-arrow {
-    /*transition: 1s ease-in-out;
-    transform: rotate(-90deg);*/
-    animation: rotation 0.5s ease-in-out;
+    animation: rotation 0.3s ease-in-out;
   }
 
   header {
@@ -57,10 +55,7 @@
     background-color: $neutral-white;
     padding-top: 7%;
     padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+
     position: absolute;
     top: 100px;
     right: 5%;
