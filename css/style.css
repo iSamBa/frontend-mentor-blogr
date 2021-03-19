@@ -99,7 +99,7 @@
             align-items: center;
     width: 100%;
   }
-  .menu .items .title {
+  .menu .items .item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -109,11 +109,11 @@
     padding-top: 4%;
     padding-bottom: 4%;
   }
-  .menu .items .title h3 {
+  .menu .items .item h3 {
     font-size: 1.1rem;
     font-weight: 500;
   }
-  .menu .items .title img {
+  .menu .items .item img {
     width: 12px;
     height: 8px;
     margin-left: 10px;
