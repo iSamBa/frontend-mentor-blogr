@@ -3,7 +3,7 @@
 @import "variables/colors";
 @import "variables/fonts";
 
-@media screen and (max-width: $mobile-screen) {
+@media screen and (max-width: 640px) {
   .hidden {
     display: none;
   }
@@ -28,7 +28,6 @@
     position: relative;
     height: 100%;
     width: 100%;
-    padding-bottom: 20%;
   }
   nav {
     z-index: 2;
@@ -126,7 +125,7 @@
     }
   }
   .introduction {
-    padding-top: 40%;
+    padding: 25% 0;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -10,7 +10,7 @@
   align-items: $align;
 }
 
-@media screen and (max-width: $desktop-screen) {
+@media screen and (min-width: 641px) {
   body {
     @include display-flex(column, center, center);
   }
