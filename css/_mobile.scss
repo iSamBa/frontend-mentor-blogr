@@ -86,10 +86,7 @@
         align-items: center;
       }
       .item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(column, center, center);
         padding-top: 4%;
         padding-bottom: 4%;
         width: 100%;
@@ -122,11 +119,8 @@
     }
   }
   .introduction {
+    @include display-flex(column, center, center);
     padding: 25% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     z-index: 2;
   }
   .description {
@@ -173,11 +167,8 @@
   }
 
   .content {
+    @include display-flex(column, center, center);
     padding: 30% 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     h2 {
       font-family: $overpass;
       font-size: 1.7rem;
@@ -198,7 +189,6 @@
       width: 100%;
       margin: 15px 0;
     }
-
     .state-art {
       position: relative;
       top: -150px;
@@ -242,13 +232,10 @@
     }
   }
   #application {
+    @include display-flex(column, start, center);
     padding-left: 5%;
     padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 375px;
+    width: 640px;
     overflow: hidden;
     img {
       width: 130%;
@@ -256,14 +243,10 @@
   }
 
   footer {
+    @include display-flex(column, center, center);
     background-color: $very-dark-black-blue;
     color: $neutral-white;
     font-family: $ubuntu;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding-top: 50px;
     padding-bottom: 25px;
     border-top-right-radius: 100px;

@@ -150,7 +150,6 @@
     font-weight: 200;
   }
   .introduction {
-    padding: 25% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -158,12 +157,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 25% 0;
     z-index: 2;
   }
   .description {
@@ -209,7 +209,6 @@
     color: white;
   }
   .content {
-    padding: 30% 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,12 +216,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30% 5%;
   }
   .content h2 {
     font-family: "Overpass", sans-serif;
@@ -287,8 +287,6 @@
     padding-bottom: 100px;
   }
   #application {
-    padding-left: 5%;
-    padding-right: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -302,16 +300,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 375px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 640px;
     overflow: hidden;
   }
   #application img {
     width: 130%;
   }
   footer {
-    background-color: #25252d;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -325,7 +322,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    background-color: #25252d;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
     padding-top: 50px;
     padding-bottom: 25px;
     border-top-right-radius: 100px;
