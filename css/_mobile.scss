@@ -3,6 +3,23 @@
 @import "variables/colors";
 @import "variables/fonts";
 
+@mixin display-flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin add-background-image(
+  $image-url,
+  $image-size,
+  $image-position-x,
+  $image-position-y
+) {
+  background-image: url($image-url);
+  background-size: $image-size;
+  background-position-x: $image-position-x;
+  background-position-y: $image-position-y;
+}
 @media screen and (max-width: 640px) {
   .hidden {
     display: none;
@@ -18,10 +35,13 @@
     overflow: hidden;
   }
   .header-container {
-    background-image: url("../images/bg-pattern-intro.svg");
-    background-size: 350%;
-    background-position-x: -400px;
-    background-position-y: -150px;
+    @include add-background-image(
+      "../images/bg-pattern-intro.svg",
+      350%,
+      38%,
+      35%
+    );
+
     color: $neutral-white;
     display: flex;
     flex-direction: column;

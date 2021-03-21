@@ -17,8 +17,8 @@
   .header-container {
     background-image: url("../images/bg-pattern-intro.svg");
     background-size: 350%;
-    background-position-x: -400px;
-    background-position-y: -150px;
+    background-position-x: 38%;
+    background-position-y: 35%;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
