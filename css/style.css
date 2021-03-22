@@ -12,7 +12,6 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
     background: linear-gradient(to bottom, #ff8f70, #ff3d54);
     border-bottom-left-radius: 100px;
-    overflow: hidden;
   }
   .header-container {
     background-image: url("../images/bg-pattern-intro.svg");
@@ -58,7 +57,7 @@
     top: 100px;
     right: 5%;
     width: 90%;
-    z-index: 10;
+    z-index: 3;
     border-radius: 5px;
     padding-bottom: 10%;
     color: #1f3f5b;
@@ -77,7 +76,8 @@
   .menu button {
     margin-bottom: 20px;
   }
-  .menu .signup-btn {
+  .menu .signup-btn:hover,
+  .menu .login-btn:hover {
     background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
     background: linear-gradient(to right, #ff8f70, #ff3d54);
     color: white;
@@ -148,6 +148,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 200;
+    cursor: pointer;
   }
   .introduction {
     display: -webkit-box;
@@ -164,7 +165,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 25% 0;
-    z-index: 2;
+    z-index: 1;
   }
   .description {
     padding: 0% 10%;
@@ -176,6 +177,7 @@
     margin-top: 50px;
   }
   button {
+    cursor: pointer;
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
     height: 50px;
@@ -200,13 +202,15 @@
     font-family: "Ubuntu", sans-serif;
     margin-top: 20px;
   }
+  header .more-btn,
   header .start-btn {
-    background-color: white;
-    color: #ff525d;
-  }
-  header .more-btn {
     background: transparent;
     color: white;
+  }
+  header .more-btn:hover,
+  header .start-btn:hover {
+    background-color: white;
+    color: #ff525d;
   }
   .content {
     display: -webkit-box;
@@ -346,6 +350,7 @@
   footer li {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    cursor: pointer;
   }
 }
 

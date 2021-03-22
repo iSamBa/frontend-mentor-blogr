@@ -8,15 +8,12 @@
   .hidden {
     display: none;
   }
-
   .arrow-open {
     transform: rotate(-180deg);
   }
-
   header {
     background: $header-gradient;
     border-bottom-left-radius: 100px;
-    overflow: hidden;
   }
   .header-container {
     @include add-background-image(
@@ -53,7 +50,7 @@
     top: 100px;
     right: 5%;
     width: 90%;
-    z-index: 10;
+    z-index: 3;
     border-radius: 5px;
     padding-bottom: 10%;
     color: $very-dark-blue;
@@ -70,13 +67,16 @@
     button {
       margin-bottom: 20px;
     }
-    .signup-btn {
-      background: linear-gradient(
-        to right,
-        hsl(13, 100%, 72%),
-        hsl(353, 100%, 62%)
-      );
-      color: $neutral-white;
+    .signup-btn,
+    .login-btn {
+      &:hover {
+        background: linear-gradient(
+          to right,
+          hsl(13, 100%, 72%),
+          hsl(353, 100%, 62%)
+        );
+        color: $neutral-white;
+      }
     }
     .items {
       @include display-flex(column, center, center);
@@ -115,13 +115,14 @@
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: 200;
+        cursor: pointer;
       }
     }
   }
   .introduction {
     @include display-flex(column, center, center);
     padding: 25% 0;
-    z-index: 2;
+    z-index: 1;
   }
   .description {
     padding: 0% 10%;
@@ -131,6 +132,7 @@
     margin-top: 50px;
   }
   button {
+    cursor: pointer;
     font-family: $ubuntu;
     font-weight: 600;
     height: 50px;
@@ -156,13 +158,14 @@
       font-family: $ubuntu;
       margin-top: 20px;
     }
+    .more-btn,
     .start-btn {
-      background-color: $neutral-white;
-      color: $light-red;
-    }
-    .more-btn {
       background: transparent;
       color: $neutral-white;
+      &:hover {
+        background-color: $neutral-white;
+        color: $light-red;
+      }
     }
   }
 
@@ -267,6 +270,7 @@
     li {
       margin-bottom: 15px;
       font-size: 1.1rem;
+      cursor: pointer;
     }
   }
 }
