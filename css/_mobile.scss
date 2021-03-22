@@ -244,6 +244,7 @@
 
   footer {
     @include display-flex(column, center, center);
+    text-align: center;
     background-color: $very-dark-black-blue;
     color: $neutral-white;
     font-family: $ubuntu;

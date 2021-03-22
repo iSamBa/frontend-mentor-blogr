@@ -322,6 +322,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     background-color: #25252d;
     color: white;
     font-family: "Ubuntu", sans-serif;
