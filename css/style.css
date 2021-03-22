@@ -382,7 +382,7 @@
     background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
     background: linear-gradient(to right, #ff8f70, #ff3d54);
     border-bottom-left-radius: 80px;
-    height: 50vh;
+    height: 100%;
     overflow: hidden;
   }
   .header-container {
@@ -437,7 +437,7 @@
             align-items: center;
     font-family: "Overpass", sans-serif;
     text-align: center;
-    padding: 5% 0;
+    padding: 5% 0 7% 0;
   }
   .header-container .introduction .description h1 {
     font-size: 3rem;

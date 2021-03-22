@@ -23,7 +23,7 @@
     @include display-flex(column, center, center);
     background: $header-gradient-desktop;
     border-bottom-left-radius: 80px;
-    height: 50vh;
+    height: 100%;
     overflow: hidden;
   }
   .header-container {
@@ -50,7 +50,7 @@
       @include display-flex(column, center, center);
       font-family: $overpass;
       text-align: center;
-      padding: 5% 0;
+      padding: 5% 0 7% 0;
       .description {
         h1 {
           font-size: 3rem;

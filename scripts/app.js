@@ -22,6 +22,15 @@ Array.from(menuItems).forEach((item) => {
   });
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 640) {
+    menu.classList.remove("hidden");
+  }
+  else {
+    menu.classList.add("hidden");
+  }
+})
+
 burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.add("hidden");
   closeMenu.classList.remove("hidden");
