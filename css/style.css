@@ -164,7 +164,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 25% 0;
-    z-index: 1;
+    z-index: 2;
   }
   .description {
     padding: 0% 10%;
@@ -364,6 +364,27 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+    border-bottom-left-radius: 80px;
+    overflow: hidden;
+  }
+  .header-container {
+    background-image: url("../images/bg-pattern-intro.svg");
+    background-size: 240%;
+    background-position-x: 28%;
+    background-position-y: 52%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
 }
 

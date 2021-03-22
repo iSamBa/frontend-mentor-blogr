@@ -6,5 +6,22 @@
 @media screen and (min-width: 641px) {
   header {
     @include display-flex(column, center, center);
+    background: $header-gradient-desktop;
+    border-bottom-left-radius: 80px;
+    overflow: hidden;
+  }
+  .header-container {
+    @include add-background-image(
+      "../images/bg-pattern-intro.svg",
+      240%,
+      28%,
+      52%
+    );
+    color: $neutral-white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
   }
 }

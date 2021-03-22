@@ -121,7 +121,7 @@
   .introduction {
     @include display-flex(column, center, center);
     padding: 25% 0;
-    z-index: 1;
+    z-index: 2;
   }
   .description {
     padding: 0% 10%;
