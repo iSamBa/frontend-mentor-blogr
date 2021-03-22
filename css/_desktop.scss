@@ -40,10 +40,13 @@
     height: 100%;
     width: 100%;
     nav {
-      @include display-flex(row, space-between, center);
+      @include display-flex(row, start, center);
       padding: 7% 10% 2% 10%;
       .burger-menu {
         display: none;
+      }
+      .menu {
+        @include display-flex(row, space-between, center);
       }
     }
     .introduction {
