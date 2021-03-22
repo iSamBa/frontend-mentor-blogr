@@ -8,13 +8,10 @@
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
-  header {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
-    background: linear-gradient(to bottom, #ff8f70, #ff3d54);
-    border-bottom-left-radius: 100px;
-  }
   .header-container {
-    background-image: url("../images/bg-pattern-intro.svg");
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+    background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to bottom, #ff8f70, #ff3d54);
     background-size: 350%;
     background-position-x: 38%;
     background-position-y: 35%;
@@ -391,7 +388,8 @@
     overflow: hidden;
   }
   .header-container {
-    background-image: url("../images/bg-pattern-intro.svg");
+    background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
     background-size: 240%;
     background-position-x: 25%;
     background-position-y: 52%;

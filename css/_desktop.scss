@@ -28,6 +28,7 @@
   }
   .header-container {
     @include add-background-image(
+      $header-gradient-desktop,
       "../images/bg-pattern-intro.svg",
       240%,
       25%,

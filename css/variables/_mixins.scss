@@ -5,8 +5,8 @@
   align-items: $align;
 }
 
-@mixin add-background-image($url, $size, $position-x, $position-y) {
-  background-image: url($url);
+@mixin add-background-image($gradient, $url, $size, $position-x, $position-y) {
+  background-image: url($url), $gradient;
   background-size: $size;
   background-position-x: $position-x;
   background-position-y: $position-y;

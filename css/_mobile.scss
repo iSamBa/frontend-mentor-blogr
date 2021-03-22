@@ -11,12 +11,10 @@
   .arrow-open {
     transform: rotate(-180deg);
   }
-  header {
-    background: $header-gradient;
-    border-bottom-left-radius: 100px;
-  }
   .header-container {
+    border-bottom-left-radius: 100px;
     @include add-background-image(
+      $header-gradient,
       "../images/bg-pattern-intro.svg",
       350%,
       38%,
