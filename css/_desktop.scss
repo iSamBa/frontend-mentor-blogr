@@ -4,17 +4,33 @@
 @import "variables/fonts";
 
 @media screen and (min-width: 641px) {
+  .hidden {
+    display: none;
+  }
+  .arrow-open {
+    transform: rotate(-180deg);
+  }
+  button {
+    font-family: $ubuntu;
+    font-weight: 600;
+    height: 40px;
+    width: 120px;
+    border: 1px solid $neutral-white;
+    border-radius: 25px;
+  }
+
   header {
     @include display-flex(column, center, center);
     background: $header-gradient-desktop;
     border-bottom-left-radius: 80px;
+    height: 50vh;
     overflow: hidden;
   }
   .header-container {
     @include add-background-image(
       "../images/bg-pattern-intro.svg",
       240%,
-      28%,
+      25%,
       52%
     );
     color: $neutral-white;
@@ -23,5 +39,37 @@
     position: relative;
     height: 100%;
     width: 100%;
+    nav {
+      @include display-flex(row, space-between, center);
+      padding: 7% 10% 2% 10%;
+      .burger-menu {
+        display: none;
+      }
+    }
+    .introduction {
+      @include display-flex(column, center, center);
+      font-family: $overpass;
+      text-align: center;
+      padding: 5% 0;
+      .description {
+        h1 {
+          font-size: 3rem;
+          padding: 1% 0;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .buttons {
+        padding: 2% 0;
+        .start-btn {
+          color: $light-red;
+        }
+        .more-btn {
+          background: transparent;
+          color: $neutral-white;
+        }
+      }
+    }
   }
 }

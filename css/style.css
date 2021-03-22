@@ -350,6 +350,21 @@
 }
 
 @media screen and (min-width: 641px) {
+  .hidden {
+    display: none;
+  }
+  .arrow-open {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    height: 40px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 25px;
+  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,12 +382,13 @@
     background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
     background: linear-gradient(to right, #ff8f70, #ff3d54);
     border-bottom-left-radius: 80px;
+    height: 50vh;
     overflow: hidden;
   }
   .header-container {
     background-image: url("../images/bg-pattern-intro.svg");
     background-size: 240%;
-    background-position-x: 28%;
+    background-position-x: 25%;
     background-position-y: 52%;
     color: white;
     display: -webkit-box;
@@ -385,6 +401,60 @@
     position: relative;
     height: 100%;
     width: 100%;
+  }
+  .header-container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7% 10% 2% 10%;
+  }
+  .header-container nav .burger-menu {
+    display: none;
+  }
+  .header-container .introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Overpass", sans-serif;
+    text-align: center;
+    padding: 5% 0;
+  }
+  .header-container .introduction .description h1 {
+    font-size: 3rem;
+    padding: 1% 0;
+  }
+  .header-container .introduction .description p {
+    font-size: 16px;
+  }
+  .header-container .introduction .buttons {
+    padding: 2% 0;
+  }
+  .header-container .introduction .buttons .start-btn {
+    color: #ff525d;
+  }
+  .header-container .introduction .buttons .more-btn {
+    background: transparent;
+    color: white;
   }
 }
 
