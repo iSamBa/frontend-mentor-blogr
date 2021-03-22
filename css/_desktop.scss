@@ -4,7 +4,7 @@
 @import "variables/fonts";
 
 @media screen and (min-width: 641px) {
-  body {
+  header {
     @include display-flex(column, center, center);
   }
 }

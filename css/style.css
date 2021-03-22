@@ -58,7 +58,7 @@
     top: 100px;
     right: 5%;
     width: 90%;
-    z-index: 4;
+    z-index: 10;
     border-radius: 5px;
     padding-bottom: 10%;
     color: #1f3f5b;
@@ -164,7 +164,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 25% 0;
-    z-index: 2;
+    z-index: 1;
   }
   .description {
     padding: 0% 10%;
@@ -350,7 +350,7 @@
 }
 
 @media screen and (min-width: 641px) {
-  body {
+  header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
