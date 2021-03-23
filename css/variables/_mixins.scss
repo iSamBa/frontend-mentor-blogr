@@ -8,6 +8,7 @@
 @mixin add-background-image($gradient, $url, $size, $position-x, $position-y) {
   background-image: url($url), $gradient;
   background-size: $size;
+  background-repeat: no-repeat;
   background-position-x: $position-x;
   background-position-y: $position-y;
 }
