@@ -135,9 +135,11 @@
   .content {
     font-family: $overpass;
     .title {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $very-dark-blue;
       padding: 5% 0 2% 0;
+      position: relative;
+      top: 20%;
     }
     h2 {
       font-size: 2rem;
@@ -148,6 +150,7 @@
         @include display-flex(column, start, center);
         width: 100%;
         overflow: hidden;
+        padding-bottom: 5%;
         div {
           @include display-flex(row, start, center);
           img {
@@ -201,6 +204,47 @@
             line-height: 30px;
           }
         }
+      }
+    }
+    #application {
+      @include display-flex(row, start, center);
+      padding: 3% 0;
+      img {
+        content: url("../images/illustration-laptop-desktop.svg");
+        position: relative;
+        left: -18%;
+      }
+      div {
+        position: relative;
+        left: -100px;
+        h2 {
+          padding-bottom: 3%;
+          margin-top: 5%;
+        }
+      }
+      p {
+        line-height: 40px;
+      }
+    }
+  }
+  footer {
+    @include display-flex(row, space-around, start);
+    background-color: $very-dark-black-blue;
+    padding: 4% 10%;
+    color: $neutral-white;
+    font-family: $ubuntu;
+    border-top-right-radius: 100px;
+    div {
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+      h3 {
+        font-weight: 600;
+        margin-bottom: 25px;
       }
     }
   }
