@@ -465,6 +465,9 @@
   .header-container nav .menu .login-btn:hover {
     background-color: #ff525d;
   }
+  .header-container nav .menu .signup-btn {
+    color: #ff525d;
+  }
   .header-container nav .menu .signup-btn:hover {
     background-color: #ff525d;
     border: none;
