@@ -230,7 +230,7 @@
   footer {
     @include display-flex(row, space-around, start);
     background-color: $very-dark-black-blue;
-    padding: 4% 10%;
+    padding: 4% 10% 1% 10%;
     color: $neutral-white;
     font-family: $ubuntu;
     border-top-right-radius: 100px;

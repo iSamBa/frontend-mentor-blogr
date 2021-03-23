@@ -751,7 +751,7 @@
         -ms-flex-align: start;
             align-items: start;
     background-color: #25252d;
-    padding: 4% 10%;
+    padding: 4% 10% 1% 10%;
     color: white;
     font-family: "Ubuntu", sans-serif;
     border-top-right-radius: 100px;
