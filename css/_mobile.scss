@@ -54,16 +54,22 @@
     color: $very-dark-blue;
     font-family: $ubuntu;
     box-shadow: 2px 5px 5px #bebebe;
+    div {
+      &:nth-child(2) {
+        @include display-flex(column, center, center);
+        height: 100%;
+      }
+    }
     hr {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 90%;
+      width: 70%;
       height: 1px;
       color: #f0efef;
       border-bottom: 0px;
     }
     button {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
     .signup-btn,
     .login-btn {

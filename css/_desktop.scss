@@ -48,6 +48,22 @@
       .menu {
         @include display-flex(row, space-between, center);
         width: 100%;
+        .login-btn {
+          background: transparent;
+          color: $neutral-white;
+          border: none;
+          &:hover {
+            background-color: $light-red;
+          }
+        }
+        .signup-btn {
+          &:hover {
+            background-color: $light-red;
+            border: none;
+            color: $neutral-white;
+          }
+        }
+
         .items {
           @include display-flex(row, space-between, center);
           font-family: $ubuntu;
@@ -104,13 +120,15 @@
         }
       }
       .buttons {
-        padding: 2% 0;
+        padding: 3% 0;
         .start-btn {
           color: $light-red;
+          height: 45px;
         }
         .more-btn {
           background: transparent;
           color: $neutral-white;
+          height: 45px;
         }
       }
     }

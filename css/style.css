@@ -62,16 +62,32 @@
     -webkit-box-shadow: 2px 5px 5px #bebebe;
             box-shadow: 2px 5px 5px #bebebe;
   }
+  .menu div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
   .menu hr {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
+    width: 70%;
     height: 1px;
     color: #f0efef;
     border-bottom: 0px;
   }
   .menu button {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .menu .signup-btn:hover,
   .menu .login-btn:hover {
@@ -439,6 +455,19 @@
             align-items: center;
     width: 100%;
   }
+  .header-container nav .menu .login-btn {
+    background: transparent;
+    color: white;
+    border: none;
+  }
+  .header-container nav .menu .login-btn:hover {
+    background-color: #ff525d;
+  }
+  .header-container nav .menu .signup-btn:hover {
+    background-color: #ff525d;
+    border: none;
+    color: white;
+  }
   .header-container nav .menu .items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,14 +558,16 @@
     font-size: 16px;
   }
   .header-container .introduction .buttons {
-    padding: 2% 0;
+    padding: 3% 0;
   }
   .header-container .introduction .buttons .start-btn {
     color: #ff525d;
+    height: 45px;
   }
   .header-container .introduction .buttons .more-btn {
     background: transparent;
     color: white;
+    height: 45px;
   }
 }
 
