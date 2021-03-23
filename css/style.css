@@ -390,7 +390,7 @@
   .header-container {
     background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
     background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
-    background-size: 240%;
+    background-size: 140%;
     background-position-x: 25%;
     background-position-y: 52%;
     color: white;
@@ -402,7 +402,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    height: 100%;
     width: 100%;
   }
   .header-container nav {
@@ -419,7 +418,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 7% 10% 2% 10%;
+    padding: 35px 10% 2% 10%;
   }
   .header-container nav .burger-menu {
     display: none;
@@ -438,6 +437,71 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+  }
+  .header-container nav .menu .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    padding-left: 25px;
+  }
+  .header-container nav .menu .items hr {
+    display: none;
+  }
+  .header-container nav .menu .items .item {
+    padding: 0 15px;
+  }
+  .header-container nav .menu .items .item .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-container nav .menu .items .item .title h3 {
+    color: white;
+  }
+  .header-container nav .menu .items .item .title img {
+    content: url("../images/icon-arrow-light.svg");
+    width: 12px;
+    margin-left: 10px;
+  }
+  .header-container nav .menu .items .item ul {
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    color: #1f3f5b;
+    padding: 2%;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 3px 5px #a5a5a5;
+            box-shadow: 2px 3px 5px #a5a5a5;
+  }
+  .header-container nav .menu .items .item ul li {
+    cursor: pointer;
+    list-style: none;
+    margin: 20px 0;
+  }
+  .header-container nav .menu .items .item ul li:hover {
+    font-weight: 700;
   }
   .header-container .introduction {
     display: -webkit-box;
